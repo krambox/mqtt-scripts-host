@@ -9,6 +9,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "mqtt-scripts": "^1.0.4"
+    "mqtt-scripts": "https://github.com/krambox/mqtt-scripts.git"
   }
 }

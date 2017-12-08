@@ -1,5 +1,5 @@
 ## Docker
 
-    docker build -t mqtt-scripts-host .
+    docker build -t mqttscripts .
 
-    docker run --env km200config=/data/config.yml  -v /Volumes/data/smarthome:/data -it mqtt-scripts-host 
+    sudo docker run --env-file /volume1/data/smarthome/scripthost.env   -v /Volumes/data/smarthome/scripts:/data -it mqtt-scripts-host 
