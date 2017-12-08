@@ -16,7 +16,7 @@ COPY package.json .
 #
 # ---- Dependencies ----
 FROM base AS dependencies
-RUN apk add --no-cache  python build-base  libmcrypt-dev
+RUN apk add --no-cache  python build-base  git
 # install node packages
 RUN npm set progress=false && npm config set depth 0
 RUN npm install --only=production 
